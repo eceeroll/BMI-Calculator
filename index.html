@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap" rel="stylesheet">
+    <title>BMI Calculator</title>
+</head>
+<body class="body">
+    
+   <div class="container">
+    <div class="bmi_panel">
+
+        <div class="row">
+
+            <div class="text-section col-6">
+                <h1> BMI Calculator</h1>
+                <p>
+                    To discover your body mass index, just enter your height (m), weight (kg), gender and click Calculate
+                </p>
+                <img style="width:400px ; height:180px; position: relative; left: 20px; " src="https://ongunsigorta.com/resim/blog/vucut-kitle-indeksi.png" alt="nn">
+            </div>
+           <div class="row form-section col-6">
+            <form id="form" class="col-6">
+                <div class="form-group">
+                  <label for="height">Height</label>
+                  <input type="text" class="form-control" id="height" aria-describedby="emailHelp">
+                  <small id="heightHelp" class="form-text text-muted">Please input your height in meter format. (exp: 1.65)</small>
+                </div>
+                <div class="form-group">
+                  <label for="weight">Weight</label>
+                  <input type="text" class="form-control" id="weight">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender">
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                      </select>                  
+                </div>
+                <button id="calculate_button" type="submit" class="btn btn-dark">Calculate</button>
+              </form>
+              <div class="result col-6">
+                <p id="result_p">
+                    Your Current BMI is:
+                    <span id="result"> 20.02 </span> <br>
+                    <span id="result-comment"> Well done. This BMI and waist circumference show a healthy weight.</span> 
+                </p>
+            </div>
+           </div>
+        </div>
+
+    </div>
+   </div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script> -->
+    <script src="main.js"></script>
+</body>
+</html>
